@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, var(--Soft-violet), var(--Soft-blue))
+    no-repeat center;
+  background-size: cover;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.wrapper {
+  background: white url("images/bg-pattern-desktop.svg") no-repeat;
+  background-position: 1260% 65%;
+  border-radius: 20px;
+  height: 509px;
+  width: 920px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #000;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-woman {
+  background: url("images/illustration-woman-online-desktop.svg") no-repeat;
+  height: 100%;
+  background-position: 700% center;
+}
+
+#box {
+  position: absolute;
+  top: 42%;
+  left: -21%;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.faq-container h1 {
+  font-size: 2rem;
+  color: var(--Very-dark-desaturated-blue);
+  margin-bottom: 2rem;
+}
+
+.question-wrapper {
+  color: var(--Dark-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.question-wrapper img {
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.question {
+  padding-right: 5rem;
+}
+.question-elements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.question-title:hover {
+  color: var(--Soft-red);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.answer {
+  display: none;
+}
+
+.active .answer {
+  display: block;
+  padding-bottom: 1.3rem;
+  color: var(--Very-dark-grayish-blue);
+  transition: all 0.3s ease-in;
+}
+
+.attribution {
+  font-weight: bold;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: #fff !important;
+  font-size: 20px;
+  color: hsl(228, 45%, 44%);
+}
